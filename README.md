@@ -17,6 +17,7 @@ Definición inicial. Sin sensor, ubicación ni prototipo validados.
 
 - [Especificación del piloto](specs/001-recordatorio-llaves/spec.md).
 - [Método y arquitectura compartida](docs/metodologia.md).
+- [Coordinación general en Notion](https://app.notion.com/p/416504754f0881afaaa6e4297e39c813).
 
 ## Próximas decisiones
 
