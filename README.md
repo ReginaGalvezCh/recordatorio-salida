@@ -1,26 +1,26 @@
-# Recordatorio al salir
+# Exit Reminder
 
-Proyecto independiente para recordar un objeto importante, como una botella o tarjeta, cuando se retiran las llaves del lugar habitual junto a la puerta. El mecanismo de detección todavía está abierto.
+An independent project to remind someone about a chosen item, such as a bottle or card, when they take their keys from their usual place by the door. The detection mechanism remains open.
 
-## Estado
+## Status
 
-Definición inicial. Sin sensor, ubicación ni prototipo validados.
+Initial definition. No sensor, placement, or prototype has been validated.
 
-## Primer alcance
+## Initial scope
 
-- Detectar que las llaves fueron retiradas de un lugar habitual.
-- Presentar el recordatorio configurado a tiempo para verlo antes de salir.
-- Restablecer la espera cuando las llaves regresen.
-- Evitar que una lectura incierta se presente como certeza.
+- Detect when the keys are taken from their usual place.
+- Show the configured reminder in time to notice it before leaving.
+- Return to the waiting state when the keys are put back.
+- Avoid presenting an uncertain reading as fact.
 
-La retirada de las llaves es el disparador propuesto para el piloto. La utilidad del momento se comprobará en la ubicación elegida; no se presupone un sensor de salida adicional.
+Taking the keys is the proposed trigger for the pilot. The timing will be tested at the chosen location; a second exit sensor is not assumed.
 
-## Documentos
+## Documents
 
-- [Especificación del piloto](specs/001-recordatorio-llaves/spec.md).
-- [Método y arquitectura compartida](docs/metodologia.md).
-- [Coordinación general en Notion](https://app.notion.com/p/416504754f0881afaaa6e4297e39c813).
+- [Pilot specification](specs/001-recordatorio-llaves/spec.md).
+- [Shared method and architecture](docs/metodologia.md).
+- [Program coordination in Notion](https://app.notion.com/p/416504754f0881afaaa6e4297e39c813).
 
-## Próximas decisiones
+## Next decisions
 
-Definir el lugar de las llaves, el sensor, el tipo de aviso, la alimentación y el montaje. La conexión a la pantalla central se decidirá solo si aparece un caso de uso claro.
+Key location, sensor, alert type, power, and mounting. A central-display connection will be considered only if there is a clear use case.
