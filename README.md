@@ -4,7 +4,7 @@ An independent project to remind someone about a chosen item, such as a bottle o
 
 ## Status
 
-Initial definition. No sensor, placement, or prototype has been validated.
+Public design and discovery stage. The repository currently contains specifications and a proposed technology map; it does not yet contain firmware or a working prototype. No sensor or placement has been validated.
 
 ## Initial scope
 
@@ -29,8 +29,19 @@ Taking the keys is the proposed trigger for the pilot. The timing will be tested
 
 - [Pilot specification](specs/001-keys-reminder/spec.md).
 - [Shared method and architecture](docs/method.md).
-- [Program coordination in Notion](https://app.notion.com/p/416504754f0881afaaa6e4297e39c813).
 
 ## Next decisions
 
 Key location, sensor, alert type, power, and mounting. A central-display connection will be considered only if there is a clear use case.
+
+## Follow the work
+
+This project is being shared early so its requirements, experiments, and trade-offs can be reviewed as they develop. The pilot specification describes intended behavior, not a validated device. Upcoming measurements and design decisions will be recorded here; GitHub Issues will track bounded next steps. Suggestions and questions are welcome through Issues.
+
+## Safety and privacy
+
+Do not publish Wi-Fi credentials, device tokens, exact home details, entryway photos, or household routines. Test observations should document the detection setup without identifying the home.
+
+## License
+
+[MIT](LICENSE) covers the current repository content. Hardware design files, if added later, will have their licensing and manufacturing information reviewed before publication.
