@@ -17,8 +17,8 @@ Taking the keys is the proposed trigger for the pilot. The timing will be tested
 
 ## Documents
 
-- [Pilot specification](specs/001-recordatorio-llaves/spec.md).
-- [Shared method and architecture](docs/metodologia.md).
+- [Pilot specification](specs/001-keys-reminder/spec.md).
+- [Shared method and architecture](docs/method.md).
 - [Program coordination in Notion](https://app.notion.com/p/416504754f0881afaaa6e4297e39c813).
 
 ## Next decisions
