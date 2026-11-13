@@ -15,6 +15,16 @@ Initial definition. No sensor, placement, or prototype has been validated.
 
 Taking the keys is the proposed trigger for the pilot. The timing will be tested at the chosen location; a second exit sensor is not assumed.
 
+## Technology map
+
+| Area | Current direction | Status |
+| --- | --- | --- |
+| Key detection | Detect confirmed removal and return at the usual place by the door. | Required capability; sensor technology open. |
+| Reminder interface | Show a configurable reminder locally before the person leaves. | Pilot direction; display or signal hardware open. |
+| Connectivity | No network is required by the current pilot behavior. | Keep independent unless a concrete use case emerges. |
+| Platform and power | Controller, firmware, mounting, and power source. | Open pending a test of the door and key area. |
+| Documentation and localization | Living English specifications; English and Spanish product text. Use Lingui if a JavaScript/TypeScript interface is built. | Language direction agreed; Spec Kit and Lingui not installed. |
+
 ## Documents
 
 - [Pilot specification](specs/001-keys-reminder/spec.md).
