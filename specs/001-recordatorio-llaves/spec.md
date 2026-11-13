@@ -28,6 +28,7 @@ Taking the keys is the proposed pilot trigger; a second sensor for detecting exi
 - Inconclusive readings are not counted as successful removals or returns.
 - In a test at the chosen location, the alert can be noticed before the door is opened, and the object does not obstruct normal use of the keys or door.
 - The test records removals, returns, and key movements that are not removals, along with successes, misses, and false alerts.
+- The reminder and any user-facing status or error messages can be presented in English and Spanish. The same detected state and cycle behavior apply in either language.
 
 ## Out of scope for now
 
@@ -40,6 +41,7 @@ Tracking people, remotely locating keys, independently detecting door opening, a
 - Alert type, physical form, and power.
 - Initial reminder content and how to configure it.
 - Acceptable miss and false-alert rates after initial tests.
+- How a person selects the display language and how a device without a JavaScript or TypeScript UI stores its translations.
 
 ## Evidence still needed
 
