@@ -1,46 +1,46 @@
-# Especificación 001: recordatorio al retirar las llaves
+# Specification 001: Reminder When Keys Are Taken
 
-**Estado:** propuesta para validar. No hay sensor, montaje ni prototipo físico verificados.
+**Status:** proposal for validation. No sensor, mounting arrangement, or physical prototype has been verified.
 
-## Propósito
+## Purpose
 
-Recordar un objeto elegido por la persona (por ejemplo, botella o tarjeta) en el momento de tomar las llaves para salir del departamento.
+Remind the person about an item they choose, such as a bottle or card, when they take their keys to leave the apartment.
 
-## Escena de uso
+## Use scenario
 
-Las llaves descansan en un lugar habitual junto a la puerta. Al retirarlas, el objeto presenta un recordatorio configurable que puede verse antes de salir. Cuando las llaves regresan, queda listo para el siguiente ciclo.
+The keys rest in their usual place by the door. When they are taken, the object shows a configurable reminder that can be seen before leaving. When the keys are returned, it is ready for the next cycle.
 
-## Primer comportamiento
+## Initial behavior
 
-1. **Espera:** las llaves se consideran presentes y no hay recordatorio de salida activo.
-2. **Retirada confirmada:** se presenta el recordatorio configurado una vez para ese ciclo.
-3. **Llaves ausentes:** el recordatorio no se dispara repetidamente mientras continúan ausentes.
-4. **Devolución confirmada:** se retira el aviso y el sistema vuelve a espera.
-5. **Estado desconocido:** si la detección es inconclusa, el sistema no afirma que las llaves están presentes ni ausentes. La forma de mostrar o registrar esta incertidumbre se decidirá con la interfaz.
+1. **Waiting:** the keys are considered present and no exit reminder is active.
+2. **Confirmed removal:** the configured reminder is shown once for that cycle.
+3. **Keys absent:** the reminder does not repeatedly trigger while the keys remain absent.
+4. **Confirmed return:** the alert is cleared and the system returns to waiting.
+5. **Unknown state:** if detection is inconclusive, the system does not claim the keys are present or absent. How to display or record this uncertainty will be decided with the interface.
 
-La retirada de llaves es el disparador propuesto para el piloto; no se presupone un segundo sensor que detecte la salida.
+Taking the keys is the proposed pilot trigger; a second sensor for detecting exit is not assumed.
 
-## Criterios de aceptación del piloto
+## Pilot acceptance criteria
 
-- Una retirada confirmada activa el recordatorio configurado sin otra acción.
-- La devolución confirmada restablece la espera y permite un nuevo ciclo.
-- El aviso se activa una sola vez por ciclo; no se repite sin límite mientras las llaves siguen fuera.
-- Las lecturas inconclusas no se cuentan como retiradas o devoluciones correctas.
-- En una prueba en la ubicación elegida, el aviso resulta perceptible antes de abrir la puerta y el objeto no estorba el movimiento habitual de las llaves ni de la puerta.
-- La prueba registra retiradas, devoluciones y movimientos de las llaves que no constituyen una retirada, junto con aciertos, omisiones y avisos falsos.
+- Confirmed removal activates the configured reminder without another action.
+- Confirmed return resets the waiting state and allows a new cycle.
+- The alert triggers once per cycle and does not repeat indefinitely while the keys remain away.
+- Inconclusive readings are not counted as successful removals or returns.
+- In a test at the chosen location, the alert can be noticed before the door is opened, and the object does not obstruct normal use of the keys or door.
+- The test records removals, returns, and key movements that are not removals, along with successes, misses, and false alerts.
 
-## Fuera de alcance por ahora
+## Out of scope for now
 
-Rastreo de personas, localización remota de llaves, detección independiente de apertura de puerta y vínculo con la pantalla central.
+Tracking people, remotely locating keys, independently detecting door opening, and a central-display connection.
 
-## Decisiones abiertas
+## Open decisions
 
-- Lugar habitual de las llaves y ubicación del objeto.
-- Método de detección y tratamiento de lecturas ambiguas.
-- Tipo de aviso, forma física y alimentación.
-- Contenido inicial del recordatorio y modo de configurarlo.
-- Umbral aceptable de omisiones y avisos falsos tras las primeras pruebas.
+- Usual key location and object placement.
+- Detection method and treatment of ambiguous readings.
+- Alert type, physical form, and power.
+- Initial reminder content and how to configure it.
+- Acceptable miss and false-alert rates after initial tests.
 
-## Evidencia pendiente
+## Evidence still needed
 
-Primero se debe comprobar la escena de uso y el espacio disponible. Después se compararán sensores con un montaje de prueba y se registrarán los resultados. Ninguna de esas pruebas se ha realizado todavía.
+First, verify the use scenario and available space. Then compare sensors in a test setup and record the results. None of those tests has been performed yet.
